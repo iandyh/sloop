@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "auto-concurrency-converter",
+    "description": "This extension automatically converts the price into certain concurrencies",
+    "version": "1.0",
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+            "matches": ["http://www.amazon.co.jp/*"],
+            "js": ["jquery.js", "tmpl.js", "utils.js", "converter.js", "amazon-jp.js"]
+        },
+        {
+            "matches": ["http://www.amazon.com/*"],
+            "js": ["jquery.js", "tmpl.js", "utils.js", "converter.js", "amazon-us.js"]
+        },
+        {
+            "matches": ["http://store.apple.com/hk-zh/*"],
+            "js": ["jquery.js", "tmpl.js", "utils.js", "converter.js", "apple-hk.js"]
+        }
+    ]
+}
