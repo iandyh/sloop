@@ -14,7 +14,9 @@ var handle_submit = function() {
 }
 
 var render_options = function() {
-    var selected = localStorage['converter'].split(',');
+    var data = localStorage['converter'],
+        selected = data && data.split(',');
+    if (!selected) return false;
     selected.forEach(function(currency){
         var node = document.getElementsByName(currency.toLowerCase())[0];
         node.checked = true;

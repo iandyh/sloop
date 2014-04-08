@@ -15,6 +15,7 @@ chrome.runtime.sendMessage({method: 'getLocalStorage', key: STORAGE_KEY}, functi
     to_currencies.remove(from_currency);
     cfg.toCurrencies = to_currencies;
     cfg.fromCurrency = from_currency;
+
     cfg.hasHoverEvent = true;
     cfg.hoverElement = $('.swatchInnerText');
     cfg.priceSelParents = '.swatchOuter';

@@ -11,11 +11,11 @@ chrome.runtime.sendMessage({method: 'getLocalStorage', key: STORAGE_KEY}, functi
         parent_eles = $.map(eles, function(item, i) {
             return $(item).parent();
         });
-    console.log(eles.length);
     cfg.prices = prices;
     cfg.parentEles = parent_eles;
     to_currencies.remove(from_currency);
     cfg.toCurrencies = to_currencies;
     cfg.fromCurrency = from_currency;
+    cfg.hasHoverEvent = false;
     currency_converter.init(cfg);
 })

@@ -5,12 +5,27 @@
     <style>
       body {
           font-family: Helvetica;
-          width: 400px;
+          width: 200px;
+          background-color: #4b3b3b;
+          color: #ccc;
+          padding: 0px;
+          border: 0px;
+
+      }
+      h3 {
+          padding: 8px;
+          font-size: 14px;
+          background: linear-gradient(to bottom,#4b4b4b 0,#414141 50%,#373737 100%);
+          border-bottom; 1px solid rgba(0,0,0,.3);
+          margin: 0px;
       }
       .cfg-wrapper {
-          width: 300px;
           margin: auto;
           text-align: center;
+      }
+      .options {
+          padding: 8px;
+          background-color: #4b4b4b;
       }
       #submit-btn {
            margin-top: 20px;
@@ -20,13 +35,14 @@
   </head>
   <body>
       <div class="cfg-wrapper">
-          <h3>Choose Your Target Currency</h3>
+          <h3>Choose the Currencies You Want to Convert to</h3>
+          <div class="options">
               <input type="checkbox" name="cny" value="CNY">CNY
               <br>
               <input type="checkbox" name="usd" value="USD">USD
               <br>
               <input id="submit-btn" type="button" value="submit">
+          </div>
       </div>
   </body>
-
 </html>

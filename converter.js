@@ -86,7 +86,6 @@ var currency_converter = {
 
     render: function(rates, parents) {
         for (var i=0; i < parents.length; i++) {
-            console.log(i);
             var rate = rates[i];
             $.template('tmpl', this.tmpl);
             $.tmpl('tmpl', rate).appendTo(parents[i]);
