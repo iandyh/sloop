@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "auto-currency-converter",
-    "description": "This extension automatically converts the price into certain concurrencies",
-    "version": "1.0",
+    "name": "Auto Currency Converter",
+    "description": "This extension automatically converts the price into selected currencies",
+    "version": "1.1",
     "content_security_policy": "script-src 'self'; object-src 'self'",
     "browser_action": {
         "default_icon": "money-icon.png",
