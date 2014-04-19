@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "auto-concurrency-converter",
+    "name": "auto-currency-converter",
     "description": "This extension automatically converts the price into certain concurrencies",
     "version": "1.0",
     "content_security_policy": "script-src 'self'; object-src 'self'",
