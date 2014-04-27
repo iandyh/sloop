@@ -6,7 +6,7 @@
     <style>
       body {
           font-family: Helvetica;
-          width: 200px;
+          width: 210px;
           background-color: #4b3b3b;
           color: #ccc;
           padding: 0px;
@@ -29,8 +29,9 @@
           background-color: #4b4b4b;
       }
       #submit-btn {
-           margin-top: 20px;
+           margin-top: 15px;
       }
+      .opt { margin-top: 10px; }
       .desc { font-size: 12px; }
     </style>
     <script src="popup.js"></script>
@@ -39,11 +40,11 @@
       <div class="cfg-wrapper">
           <h3>选择你要转换的货币</h3>
           <div class="options">
-              <input type="checkbox" name="cny" value="CNY">CNY
+              <input class="opt" type="checkbox" name="cny" value="CNY">CNY
               <br>
-              <input type="checkbox" name="usd" value="USD">USD
+              <input class="opt" type="checkbox" name="usd" value="USD">USD
               <br>
-              <input id="submit-btn" type="button" value="submit">
+              <input class="opt" id="submit-btn" type="button" value="提交">
           </div>
           <p class="desc">目前在日本亚马逊、美国亚马逊、苹果香港页面里的价格支持以上货币转化。</p>
       </div>
