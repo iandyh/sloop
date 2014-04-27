@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Concurrency Converter</title>
+    <meta charset="UTF-8">
     <style>
       body {
           font-family: Helvetica;
@@ -30,12 +31,13 @@
       #submit-btn {
            margin-top: 20px;
       }
+      .desc { font-size: 12px; }
     </style>
     <script src="popup.js"></script>
   </head>
   <body>
       <div class="cfg-wrapper">
-          <h3>Choose the Currencies You Want to Convert to</h3>
+          <h3>选择你要转换的货币</h3>
           <div class="options">
               <input type="checkbox" name="cny" value="CNY">CNY
               <br>
@@ -43,6 +45,7 @@
               <br>
               <input id="submit-btn" type="button" value="submit">
           </div>
+          <p class="desc">目前在日本亚马逊、美国亚马逊、苹果香港页面里的价格支持以上货币转化。</p>
       </div>
   </body>
 </html>
